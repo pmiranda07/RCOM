@@ -1,34 +1,28 @@
 # RCOM
 
-##Projecto 1
+## Projecto 1
 
-###Obejtivos:
+### Obejtivos:
 
-» Implementar um protocolo de ligação de dados.
+* Implementar um protocolo de ligação de dados.
+* Usar o protocolo enviando um imagem entre dois computadores.
 
-» Usar o protocolo enviando um imagem entre dois computadores.
+### Ambiente de Desenvolvimento:
 
-###Ambiente de Desenvolvimento:
-
-» LINUX
-
-» Linguagem de programação: C
-
-» Portas série RS-232 (comunicação assíncrona)
+* LINUX
+* Linguagem de programação: C
+* Portas série RS-232 (comunicação assíncrona)
 
 
-##Projecto 2
+## Projecto 2
 
-###Objetivos:
+### Objetivos:
 
-» Implementar um aplicação de Download
+* Implementar um aplicação de Download
+* Configurar uma Rede de Computadores
 
-» Configurar uma Rede de Computadores
+### Ambiente de Desenvolvimento:
 
-###Ambiente de Desenvolvimento:
-
-» LINUX
-
-» Linguagem de programação: C
-
-» Linha de Comandos
+* LINUX
+* Linguagem de programação: C
+* Linha de Comandos
