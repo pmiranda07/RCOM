@@ -7,6 +7,9 @@
 #include <netdb.h>
 #include <string.h>
 
+#define CONNECTION_PORT 21
+
+
 int init_connection(char* address, int p);
 
 void login(int ctr_socket, url_info* url_info);

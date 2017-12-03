@@ -8,8 +8,6 @@
 #include "URL.h"
 #include "socketTCP.h"
 
-#define CONNECTION_PORT 21
-
 
 int main(int argc, char** argv){
 
