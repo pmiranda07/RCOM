@@ -1,4 +1,4 @@
-#include "socketTCP.h"
+#include "FTPcmd.h"
 
 
 int read_socket(int sockfd, char* str){
@@ -100,7 +100,7 @@ int download(int data_socket, url_info* url_info){
   int bytes;
   while ((bytes = read(data_socket, buf, sizeof(buf)))) {
     if (bytes < 0) {
-      fprintf(stderr, "Nothing was received from data socket fd.\n");
+      fprintf(stderr, "Nothing received from data socket.\n");
       return 1;
     }
 

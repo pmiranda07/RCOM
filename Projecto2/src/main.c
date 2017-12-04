@@ -6,7 +6,7 @@
 #include <string.h>
 
 #include "URL.h"
-#include "socketTCP.h"
+#include "FTPcmd.h"
 
 
 int main(int argc, char** argv){

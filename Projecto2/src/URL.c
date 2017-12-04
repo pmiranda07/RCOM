@@ -1,7 +1,7 @@
 #include "URL.h"
 
 void default_auth(url_info* url_info){
-  memcpy(url_info->user, "Anonymous", strlen("Anonymous") + 1);
+  memcpy(url_info->user, "general", strlen("general") + 1);
   memcpy(url_info->password, "mail@domain", strlen("mail@domain") + 1);
 };
 
