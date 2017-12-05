@@ -24,6 +24,7 @@ int main(int argc, char** argv){
   }
 
   int ctr_socket;
+  //getip
   if((ctr_socket = init_connection(inet_ntoa(*((struct in_addr *)url_info.host_info->h_addr)), CONNECTION_PORT)) == 0){
     fprintf(stderr, "Error in control connection\n");
     exit(1);

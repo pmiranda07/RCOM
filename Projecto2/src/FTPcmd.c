@@ -11,6 +11,7 @@ int read_socket(int sockfd, char* str){
   do {
     memset(str, 0, 512);
     str = fgets(str, 512, fp);
+    //print FTP server return codes
     printf("%s", str);
 }  while (!('1' <= str[0] && str[0] <= '5') || str[3] != ' ');
   char reply_series = str[0];
@@ -58,7 +59,7 @@ void login(int ctr_socket, url_info* url_info){
   write_socket(ctr_socket, username_cmd, NULL, 1);
   sprintf(password_cmd, "PASS %s\r\n", url_info->password);
   if(write_socket(ctr_socket, password_cmd, NULL, 1) != 0){
-      fprintf(stderr, "Bad login. Exiting...\n"); //TODO: Ask for valid login
+      fprintf(stderr, "Bad login.\n");
       exit(1);
   }
 }
@@ -119,7 +120,7 @@ int download(int data_socket, url_info* url_info){
 
 int end_connection(int ctr_socket, int data_socket){
 
-  printf("Ending connection\n");
+  printf("Connection Ended\n");
   if(write_socket(ctr_socket, "QUIT\r\n", NULL, 0) != 0){
     fprintf(stderr, "Error closing connection.\n");
     close(data_socket);

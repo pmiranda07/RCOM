@@ -1,0 +1,2 @@
+Comando possivel:
+"./download ftp://anonymous:1@speedtest.tele2.net/1MB.zip"
