@@ -25,7 +25,7 @@ int write_socket(int sockfd, char* cmd, char* response, int read){
       return read_socket(sockfd, response);
     else return (return_val == 0);
 }
-
+//clientTCP
 int init_connection(char* address, int p){
   int	sockfd;
 	struct	sockaddr_in server_addr;

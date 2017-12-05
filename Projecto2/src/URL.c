@@ -1,7 +1,7 @@
 #include "URL.h"
 
 void default_auth(url_info* url_info){
-  memcpy(url_info->user, "general", strlen("general") + 1);
+  memcpy(url_info->user, "anonymous", strlen("anonymous") + 1);
   memcpy(url_info->password, "mail@domain", strlen("mail@domain") + 1);
 };
 
@@ -28,7 +28,7 @@ int parse_url(char url[], url_info* url_info){
   }
   char* at_position = strrchr(url, '@');
   if(at_position == NULL){
-    default_auth(info);
+    default_auth(url_info);
     at_position = url + strlen("ftp://");
   }
   else{
@@ -47,6 +47,7 @@ int parse_url(char url[], url_info* url_info){
   url_info->file_path[last_slash-first_slash] = 0;
 
   memcpy(url_info->filename, last_slash, strlen(last_slash) + 1);
+  //getip
   if ((url_info->host_info=gethostbyname(url_info->host_url)) == NULL) {
       herror(url_info->host_url);
       exit(1);

@@ -1,3 +1,6 @@
+#ifndef __URL_H__
+#define  __URL_H__
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -18,3 +21,5 @@ typedef struct {
 
 
 int parse_url(char url[], url_info* url_info);
+
+#endif
